@@ -1,0 +1,119 @@
+@import "./animation/subscribe";
+
+.subscribe {
+  flex-direction: column;
+  padding: 80px 175px 150px;
+  background-color: $lightest-gray;
+
+  h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.42;
+    margin-bottom: 20px;
+  }
+
+  .paragraf {
+    max-width: 555px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 50px;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 80px 69px 50px;
+      border: 2px solid rgb(221, 221, 221);
+      border-radius: 10px;
+      background-color: $main-white;
+
+      &:nth-child(2) {
+        .subscribe__item-top {
+          margin-bottom: 90px;
+        }
+      }
+
+      &:nth-child(3) {
+        .subscribe__item-top {
+          margin-bottom: 50px;
+        }
+      }
+
+      .subscribe__item-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 130px;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+
+          li {
+            display: flex;
+
+            span {
+              width: 13px;
+              height: 9px;
+              color: $check;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 2.14;
+              margin-left: 26px;
+              color: $main-gray;
+            }
+          }
+        }
+      }
+
+      .subscribe__item-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        h3 {
+          font-size: 25px;
+
+          line-height: 1.2;
+          span {
+            font-weight: 400;
+            color: $main-gray;
+          }
+        }
+
+        a {
+          font-weight: 700;
+          line-height: 1.18;
+          border: 2px solid $button-color;
+          border-radius: 50px;
+          padding: 13px 62px;
+          color: $button-color;
+          transition: all 0.25s ease;
+        }
+      }
+
+      &:hover {
+        border-color: $button-color;
+        .subscribe__item-bottom {
+          a {
+            background-color: $button-color;
+            box-shadow: 0 17px 54px 0px rgba(245, 56, 56, 0.35);
+            -webkit-box-shadow: 0 17px 54px 0px rgba(245, 56, 56, 0.35);
+            -moz-box-shadow: 0 17px 54px 0px rgba(245, 56, 56, 0.35);
+            transform: translate(0, 5px);
+            color: $main-white;
+          }
+        }
+      }
+    }
+  }
+}

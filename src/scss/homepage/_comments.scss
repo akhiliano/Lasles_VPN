@@ -1,0 +1,159 @@
+@import "./animation/comments";
+
+.comments {
+  flex-direction: column;
+  align-items: center;
+  padding-left: 150px;
+  background-color: $lightest-gray;
+  overflow: hidden;
+
+  h2 {
+    max-width: 448px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.42;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .paragraf {
+    max-width: 555px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__container-top {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &__wrapper {
+      border: 2px solid rgb(221, 221, 221);
+      border-radius: 10px;
+      background: $main-white;
+
+      &:hover {
+        border-color: $active;
+      }
+
+      .comment {
+        width: 340px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+        p {
+          line-height: 1.87;
+        }
+
+        &__user {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+
+          &-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .user {
+              h3 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.88;
+              }
+
+              p {
+                font-size: 14px;
+                line-height: 2.14;
+                color: $main-gray;
+              }
+            }
+          }
+
+          &-rate {
+            span {
+              line-height: 1.87;
+            }
+
+            i {
+              width: 13px;
+              height: 13px;
+              color: $main-yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__container-bottom {
+    width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px 0 181px 0;
+
+    .slide-ball {
+      display: flex;
+      gap: 15px;
+
+      button {
+        width: 15px;
+        height: 15px;
+        background-color: $medium-gray;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &:hover {
+          width: 45px;
+          background: $active;
+        }
+
+        &:nth-child(1) {
+          width: 45px;
+          background-color: $active;
+        }
+      }
+    }
+
+    .slide-arrow {
+      display: flex;
+      gap: 20px;
+
+      button {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $main-white;
+        border: 2px solid $active;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        span {
+          color: $active;
+        }
+
+        &:hover {
+          background-color: $active;
+          transform: translate(5px, 0);
+
+          &:nth-child(1) {
+            transform: translate(-5px, 0);
+          }
+
+          span {
+            color: $main-white;
+          }
+        }
+      }
+    }
+  }
+}

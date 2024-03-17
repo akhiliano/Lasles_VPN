@@ -1,0 +1,61 @@
+.about {
+  overflow: hidden;
+
+  img {
+    filter: blur(0);
+    animation: blur_loading 2s ease-in;
+    animation-play-state: paused;
+  }
+
+  &__container {
+    h2,
+    .paragraf,
+    ul li {
+      transform: translateX(1000%);
+      animation-name: slide_in_about;
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
+    }
+
+    h2 {
+      animation-duration: 1s;
+    }
+
+    .paragraf {
+      animation-duration: 2s;
+    }
+
+    ul {
+      li {
+        &:nth-child(1) {
+          animation-duration: 2.25s;
+        }
+        &:nth-child(2) {
+          animation-duration: 2.5s;
+        }
+        &:nth-child(3) {
+          animation-duration: 2.75s;
+        }
+        &:nth-child(4) {
+          animation-duration: 3s;
+        }
+      }
+    }
+  }
+
+  &:hover h2,
+  &:hover .paragraf,
+  &:hover ul li,
+  &:hover img {
+    animation-play-state: running;
+  }
+}
+
+@keyframes slide_in_about {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

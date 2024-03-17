@@ -1,0 +1,33 @@
+.comments {
+  .comments__container-top__wrapper {
+    transform: translateX(-3000%);
+    animation-name: slide_in_com;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    &:nth-child(3) {
+      animation-duration: 2s;
+    }
+
+    &:nth-child(2) {
+      animation-duration: 2.25s;
+    }
+
+    &:nth-child(1) {
+      animation-duration: 2.5s;
+    }
+  }
+
+  &:hover .comments__container-top__wrapper {
+    animation-play-state: running;
+  }
+}
+
+@keyframes slide_in_com {
+  from {
+    transform: translateX(-500%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

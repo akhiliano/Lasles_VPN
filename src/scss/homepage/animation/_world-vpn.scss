@@ -1,0 +1,10 @@
+.network {
+  img {
+    transition: all 0.25s ease;
+
+    &:hover {
+      filter: drop-shadow(2px 0 green);
+      transform: translate(5px, 5px);
+    }
+  }
+}

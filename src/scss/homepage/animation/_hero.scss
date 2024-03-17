@@ -1,0 +1,59 @@
+.hero {
+  &__container {
+    &-wrapper {
+      h1,
+      .paragraf {
+        transform: translateX(-3000%);
+        animation-name: slide_in;
+        animation-fill-mode: forwards;
+      }
+
+      h1 {
+        animation-duration: 1s;
+      }
+
+      .paragraf {
+        animation-duration: 2s;
+      }
+    }
+
+    img {
+      filter: blur(0);
+      animation: blur_loading 2s ease-in;
+    }
+  }
+
+  &__container-bottom {
+    transform: translateX(150%);
+    animation-name: slide_up;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+  }
+}
+
+@keyframes blur_loading {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+@keyframes slide_in {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes slide_up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

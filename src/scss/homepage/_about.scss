@@ -1,0 +1,38 @@
+@import "./animation/about";
+
+.about {
+  flex-direction: row-reverse;
+  gap: 169px;
+  padding: 94px 150px 126px 184px;
+
+  &__container {
+    max-width: 428px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 1.42;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        p {
+          font-size: 14px;
+          line-height: 2.14;
+          margin-left: 12px;
+          color: $main-gray;
+        }
+      }
+    }
+  }
+}

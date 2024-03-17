@@ -1,0 +1,21 @@
+@import "./animation/world-vpn";
+
+.network {
+  flex-direction: column;
+  background-color: $lightest-gray;
+
+  h2 {
+    max-width: 383px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.42;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    max-width: 555px;
+    text-align: center;
+    margin-bottom: 155px;
+  }
+}

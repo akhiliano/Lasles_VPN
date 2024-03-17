@@ -1,0 +1,12 @@
+@import "./animation/partners";
+
+.partners {
+  background-color: $lightest-gray;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 109px 0 124px;
+    gap: 48px;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../_common/variables";
+
+.button {
+  padding: 17px 77px;
+  font-weight: 700;
+  line-height: 1.56;
+  border-radius: 10px;
+  background-color: $button-color;
+  color: $main-white;
+  transition: all .25s ease;
+
+  &:hover {
+    box-shadow: 0 24px 54px 0px rgba(245, 56, 56, 0.35);
+    -webkit-box-shadow: 0 24px 54px 0px rgba(245, 56, 56, 0.35);
+    -moz-box-shadow: 0 24px 54px 0px rgba(245, 56, 56, 0.35);
+    transform: translate(-5px, -5px);
+  }
+}

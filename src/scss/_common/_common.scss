@@ -1,0 +1,22 @@
+@import "./variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-shadow {
+  -webkit-box-shadow: 0 42px 114px 0px rgba(13, 16, 37, 0.06);
+  -moz-box-shadow: 0 42px 114px 0px rgba(13, 16, 37, 0.06);
+  box-shadow: 0 42px 114px 0px rgba(13, 16, 37, 0.06);
+}
+
+.is-hidden {
+  display: none;
+}
+
+.paragraf {
+  color: $main-gray;
+  line-height: 1.87;
+}
